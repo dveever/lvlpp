@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orig_mask"
+        android:scaleX="1.3"
+        tools:layout_editor_absoluteX="-29dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <TextView
+        android:id="@+id/cinemaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/cinema_age_limit"
+        android:textColor="#ECECEC"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:layout_editor_absoluteX="16dp"></TextView>
+
+    <TextView
+        android:id="@+id/cinemaAgeLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/cinema_name"
+        android:textColor="#ECECEC"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"></TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="@dimen/detail_main_width"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="222dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="242dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/cinema_left_margin" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="340dp" />
+
+    <TextView
+        android:id="@+id/cinemaGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/cinema_genre"
+        android:textColor="#FF3466"
+        android:textSize="14dp"
+        android:textFontWeight="400"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guidelineGenre"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
