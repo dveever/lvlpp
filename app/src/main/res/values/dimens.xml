@@ -1,6 +1,19 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="right_restrict">200dp</dimen>
     <dimen name="detail_main_width">343dp</dimen>
     <dimen name="cinema_left_margin">16dp</dimen>
-    <dimen name="genre_top_position">260dp</dimen>
+    <dimen name="star_2">32dp</dimen>
+    <dimen name="star_3">48dp</dimen>
+    <dimen name="star_4">64dp</dimen>
+    <dimen name="star_5">80dp</dimen>
+    <dimen name="review_pos">96dp</dimen>
+    <dimen name="storyline_title_h_pos">390dp</dimen>
+    <dimen name="storyline_h_pos">415dp</dimen>
+    <dimen name="cast_h_title_pos">500dp</dimen>
+    <dimen name="cast_h_pos">525dp</dimen>
+    <dimen name="cast_h_actor_pos">605dp</dimen>
+    <dimen name="cast_w2_actor_pos">115dp</dimen>
+    <dimen name="cast_w3_actor_pos">210dp</dimen>
+    <dimen name="cast_w4_actor_pos">305dp</dimen>
 </resources>
