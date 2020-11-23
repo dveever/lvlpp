@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orig_mask"
+        android:scaleX="1.3"
+        tools:layout_editor_absoluteX="-29dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <TextView
+        android:id="@+id/cinemaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/cinema_age_limit"
+        android:textColor="#ECECEC"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:layout_editor_absoluteX="16dp"></TextView>
+
+    <TextView
+        android:id="@+id/cinemaAgeLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/cinema_name"
+        android:textColor="#ECECEC"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"></TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="@dimen/detail_main_width"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="222dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="242dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/cinema_left_margin" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="340dp" />
+
+    <TextView
+        android:id="@+id/cinemaGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/cinema_genre"
+        android:textColor="#FF3466"
+        android:textFontWeight="400"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guidelineGenre"></TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="365dp" />
+
+    <ImageView
+        android:id="@+id/starImage1View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/star_icon"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/guidelineStar" />
+
+
+    <ImageView
+        android:id="@+id/starImage2View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/star_icon"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart2"
+        app:layout_constraintTop_toTopOf="@id/guidelineStar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/star_2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/star_3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/star_4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/star_5" />
+
+    <ImageView
+        android:id="@+id/starImage3View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/star_icon"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart3"
+        app:layout_constraintTop_toTopOf="@id/guidelineStar" />
+
+    <ImageView
+        android:id="@+id/starImage4View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/star_icon"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart4"
+        app:layout_constraintTop_toTopOf="@id/guidelineStar" />
+
+    <ImageView
+        android:id="@+id/starImage5View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/star_icon_grey"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart5"
+        app:layout_constraintTop_toTopOf="@id/guidelineStar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/review_pos" />
+
+    <TextView
+        android:id="@+id/reviewCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/cinema_review_count"
+        android:textColor="#6D6D80"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineReview"
+        app:layout_constraintTop_toTopOf="@+id/guidelineStar"></TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStorylineTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/storyline_title_h_pos" />
+
+    <TextView
+        android:id="@+id/storylineHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/storyline_header"
+        android:textColor="#ECECEC"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guidelineStorylineTitle"></TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStoryline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/storyline_h_pos" />
+
+    <TextView
+        android:id="@+id/storyline2"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/storyline"
+        android:textColor="#6D6D80"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guidelineStoryline"></TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCastTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/cast_h_title_pos" />
+
+    <TextView
+        android:id="@+id/castTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/cast_header"
+        android:textColor="#ECECEC"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guidelineCastTitle"></TextView>
+
+    <!--    First actor -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/cast_h_pos" />
+
+
+    <ImageView
+        android:id="@+id/downeyActor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/downey"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/guidelineCast" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCastActorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/cast_h_actor_pos" />
+
+    <TextView
+        android:id="@+id/castTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/actor_name_1"
+        android:textColor="#D8D8D8"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guidelineCastActorName"></TextView>
+
+    <!--    second actor -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCastActorSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/cast_w2_actor_pos" />
+
+    <ImageView
+        android:id="@+id/secondActor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/evans"
+        app:layout_constraintStart_toStartOf="@id/guidelineCastActorSecond"
+        app:layout_constraintTop_toTopOf="@id/guidelineCast" />
+
+    <TextView
+        android:id="@+id/castSecondActor"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/actor_name_2"
+        android:textColor="#D8D8D8"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guidelineCastActorSecond"
+        app:layout_constraintTop_toTopOf="@+id/guidelineCastActorName"></TextView>
+
+    <!--    third actor -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCastActorThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/cast_w3_actor_pos" />
+
+    <ImageView
+        android:id="@+id/thirdActor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ruffalo"
+        app:layout_constraintStart_toStartOf="@id/guidelineCastActorThird"
+        app:layout_constraintTop_toTopOf="@id/guidelineCast" />
+
+    <TextView
+        android:id="@+id/castThirdActor"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/actor_name_2"
+        android:textColor="#D8D8D8"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guidelineCastActorThird"
+        app:layout_constraintTop_toTopOf="@+id/guidelineCastActorName"></TextView>
+
+    <!--    fours actor -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCastActorFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/cast_w4_actor_pos" />
+
+    <ImageView
+        android:id="@+id/thirdFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hemsworth"
+        app:layout_constraintStart_toStartOf="@id/guidelineCastActorFour"
+        app:layout_constraintTop_toTopOf="@id/guidelineCast" />
+
+    <TextView
+        android:id="@+id/castFourActor"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="#07000000"
+        android:text="@string/actor_name_3"
+        android:textColor="#D8D8D8"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guidelineCastActorFour"
+        app:layout_constraintTop_toTopOf="@+id/guidelineCastActorName"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
